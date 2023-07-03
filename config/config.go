@@ -23,10 +23,10 @@ func init() {
 			Database: &Database{
 				DriverName: "mysql",
 				Mysql: &Mysql{
-					Username:     "root",
-					Password:     "my-secret-pw",
-					Host:         "db-mysql:3306",
-					Schema:       "repo",
+					Username:     "",
+					Password:     "",
+					Host:         "host:port",
+					Schema:       "databasename",
 					DailTimeout:  0,
 					ReadTimeout:  0,
 					WriteTimeout: 0,
