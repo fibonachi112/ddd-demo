@@ -1,0 +1,10 @@
+FROM golang:1.18-alpine
+
+WORKDIR /app
+
+RUN apk add build-base
+RUN go install github.com/go-delve/delve/cmd/dlv@latest
+
+EXPOSE 80
+
+CMD ["go run main.go", "app", "--dev"]
